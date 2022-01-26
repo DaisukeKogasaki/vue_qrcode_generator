@@ -1,13 +1,10 @@
 <template>
-  <v-app>
-    <div id="qr-code">
-      <qrcode-vue :value="value" :size="size" level="H" render-as="svg" />
-    </div>
-    <div><span>変換内容</span></div>
-    <div><textarea type="textarea" id="qr-val" /></div>
-    <div><button @click="generate()">変換</button></div>
-
-  </v-app>
+  <div id="qr-code">
+    <qrcode-vue :value="value" :size="size" level="H" render-as="svg" />
+  </div>
+  <div><span>変換内容</span></div>
+  <div><textarea type="textarea" id="qr-val" /></div>
+  <div><button @click="generate()">変換</button></div>
 </template>
 
 <script>
