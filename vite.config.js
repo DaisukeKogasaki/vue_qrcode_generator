@@ -19,7 +19,7 @@ export default defineConfig({
         "background_color": "#2196f3",
         "display": "standalone",
         "scope": "/",
-        "start_url": "/"
+        "start_url": "https://daisukekogasaki.github.io/vue_qrcode_generator/"
       },
     }),
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
