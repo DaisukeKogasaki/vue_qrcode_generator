@@ -1,10 +1,25 @@
 <template>
-  <div id="qr-code">
-    <qrcode-vue :value="value" :size="size" level="H" render-as="svg" />
-  </div>
-  <div><span>変換内容</span></div>
-  <div><textarea type="textarea" id="qr-val" /></div>
-  <div><button @click="generate()">変換</button></div>
+  <v-app>
+    <v-main>
+      <v-container>
+      <v-row>
+        <v-col>
+          <qrcode-vue :value="value" :size="size" level="H" render-as="svg" />
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <v-textarea id="qr-val" placeholder="生成内容" />
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <v-btn @click="generate()" block color="blue" text-color="white" >変換</v-btn>
+        </v-col>
+      </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
@@ -13,7 +28,7 @@
   export default {
     data() {
       return {
-        value: 'https://example.com',
+        value: 'https://daisukekogasaki.github.io/vue_qrcode_generator/',
         size: 300,
       }
     },
@@ -35,7 +50,6 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 8px;
   }
 
   span {
@@ -46,9 +60,4 @@
     width: 300px;
   }
 
-  textarea {
-    height: 100px;
-    max-width: 300px;
-    min-width: 300px;
-  }
 </style>
