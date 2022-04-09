@@ -1,4 +1,6 @@
-# vue_qrcode_generator
+# `vue_qrcode_generator`
+
+* https://daisukekogasaki.github.io/vue_qrcode_generator/
 
 ## Project setup
 ```
