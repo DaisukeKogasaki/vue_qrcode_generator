@@ -28,17 +28,14 @@
         </v-row>
         <v-row>
           <v-col>
-            <v-btn @click="generate()" block text-color="white" color="#2196F3"
-              ><v-icon dark left> mdi-qrcode-edit </v-icon>変換</v-btn
+            <v-btn @click="generate()" block color="primary"
+              ><v-icon> mdi-qrcode-edit </v-icon>変換</v-btn
             >
           </v-col>
           <v-col>
             <v-btn
-              @click="downloadItem()"
-              block
-              text-color="white"
-              color="#3F51B5"
-              ><v-icon dark left> mdi-download </v-icon>PNGで保存</v-btn
+              @click="downloadItem()" block color="success"
+              ><v-icon> mdi-download </v-icon>PNGで保存</v-btn
             >
           </v-col>
         </v-row>
